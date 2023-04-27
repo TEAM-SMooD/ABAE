@@ -26,7 +26,7 @@ class W2VEmbReader:
             emb_matrix.append(list(model.wv[word]))
 
         if emb_dim is not None:#!= 을 is not 으로 바꿈.
-            assert self.emb_dim == len(self.embeddings['숙소'])#nice를 숙소로 바꿈
+            assert self.emb_dim == len(self.embeddings['맛'])#nice를 맛으로 바꿈
             
         self.vector_size = len(self.embeddings)
         self.emb_matrix = np.asarray(emb_matrix)
